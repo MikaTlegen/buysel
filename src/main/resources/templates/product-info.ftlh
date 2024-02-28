@@ -15,6 +15,11 @@
 <b>Город: </b>${product.city}<br>
 <b>Автор: </b>${product.user.name}<br>
 <b>номер телефона: </b>${product.user.phoneNumber}<br>
+
+<form action="/product/delete/${product.id}" method="post">
+    <input type="hidden" name="_csrf" value="${_csrf.token}">
+    <input type="submit" value="Удалить товар"/>
+</form>
 <hr>
 
 </body>
