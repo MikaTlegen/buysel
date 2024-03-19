@@ -32,6 +32,8 @@ public class ProductService {
         product.setUser(getUserByPrincipal(principal));
         Image image1;
         Image image2;
+        image1 = toImageEntity(file1);
+        image1.setPreviewImage(true);
         Image image3;
         if (file1.getSize() != 0) {
             image1 = toImageEntity(file1);
